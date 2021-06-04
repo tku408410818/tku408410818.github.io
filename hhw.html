@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=" big5 ">
+    <style> 
+        input {margin-left: 1em;}
+    </style>
+    <script>
+    function validate(){
+      // 取得所有 name="answer" 的物件
+      var all = document.forms["form1"].elements["answer"];
+      
+      void print_equilateral_triangle(int size) {
+    int i, j;
+    for (i = 1; i <= size; i++) { 
+        for (j = 1; j <= size-i; j++) { 
+            printf(" ");
+        }
+        for (j = 1; j <= 2 * i - 1; j++) { 
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+    }
+    </script>
+</head>
+<body>
+    <h3>n個星星</h3>
+    <form name="form1" onsubmit="validate();return false;">
+      
+      <input type="submit">
+    </form>
+</body>
+</html>
